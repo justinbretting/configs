@@ -1,0 +1,89 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "fccec217-6a8a-44c0-9611-d72f80d8eb22"
+    js:
+      indent_size: 2
+    jsx:
+      indent_size: 2
+  "autocomplete-modules":
+    includeExtension: true
+  "autocomplete-plus":
+    backspaceTriggersAutocomplete: true
+    fileBlacklist: [
+      "*.md"
+      "*.txt"
+    ]
+  autosave:
+    enabled: true
+  "bracket-matcher":
+    autocompleteCharacters: [
+      "()"
+      "[]"
+      "{}"
+      "«»"
+      "‹›"
+      "\"\""
+      "''"
+    ]
+  core:
+    closeDeletedFileTabs: true
+    disabledPackages: [
+      "autocomplete-atom-api"
+      "autocomplete-snippets"
+      "autoflow"
+      "language-c"
+      "language-clojure"
+      "language-coffee-script"
+      "language-go"
+      "language-csharp"
+      "language-javascript"
+      "open-recent"
+      "goto"
+      "language-javascript-jsx"
+      "vim-mode-plus"
+      "atom-ctags"
+      "linter-jshint"
+      "github"
+    ]
+    excludeVcsIgnoredPaths: false
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "node_modules"
+      "bower_components"
+      "dist/*"
+      "coverage/*"
+      "public/main.js"
+      "public/css/main.css"
+      "*.log"
+      "main-*.js"
+      "bootstrap.min.css"
+    ]
+    telemetryConsent: "limited"
+    warnOnLargeFileLimit: 1
+  editor:
+    fontSize: 12
+  "exception-reporting":
+    userId: "000de84f-0e88-5fd7-49a6-4528f73bf788"
+  "find-and-replace":
+    liveSearchMinimumCharacters: 1
+    projectSearchResultsPaneSplitDirection: "right"
+    scrollToResultOnLiveSearch: true
+  "fuzzy-finder":
+    preserveLastSearch: true
+  "language-babel":
+    createTargetDirectories: false
+  "linter-eslint": {}
+  "linter-ui-default":
+    panelHeight: 69
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: false
+    ignoreWhitespaceOnCurrentLine: false
+    ignoreWhitespaceOnlyLines: true
