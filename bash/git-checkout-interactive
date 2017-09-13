@@ -1,0 +1,22 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+	GREP=".*"
+else 
+	GREP=$1
+fi
+
+branches=($(git branch -a | grep -E "$GREP" | grep -v \* | grep -v "\->" | sed -E "s/  ((remotes\/)?origin\/)?(.*)$/\3/g" | sort -uf))
+current=$(git branch -a | grep ^* | sed -E "s/\* (.*)$/\1/g")
+
+echo "Current: $current"
+
+PS3="Enter the number of the branch you'd like to check out ('$current'): "
+select CHOICE in ${branches[*]}
+do
+    case "$CHOICE" in
+    *)  git checkout $CHOICE
+	    break
+        ;;
+    esac
+done

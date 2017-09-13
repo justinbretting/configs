@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+	echo "Usage: git-archive-branch <branchname>"
+	exit -1
+else 
+	BRANCH=$(git branch -a | grep -E "$1")
+	if [ -z "$BRANCH" ]; then 
+		echo "'$1' does not appear to be a valid branch name"
+		exit -2
+	fi 
+fi
+
+echo "archiving branch '$1'..."
+
+git tag archive/$1 $1
+git push origin archive/$1
+git branch -d $1
+git push origin --delete $1
+
+

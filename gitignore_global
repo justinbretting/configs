@@ -1,0 +1,10 @@
+*.ipa
+*.DS_Store*
+Thumbs.db
+.idea*
+*xcuserdatad*
+*.xcodeproj/*
+*.iml
+/*/test/resources/*.properties
+package-lock.json
+
